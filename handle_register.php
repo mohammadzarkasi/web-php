@@ -1,18 +1,14 @@
 <?php
 
-function myPost($key)
-{
-    if(isset($_POST[$key]) == true)
-    {
-        return $_POST[$key];
-    }
-    return '';
-}
+require_once("my_functions.php");
 
 $username = myPost('username');
 $email = myPost('email');
 $password = myPost('password');
 $password2 = myPost('password2');
+
+require_once("my_functions.php");
+
 ?>
 
 <html>
@@ -30,15 +26,21 @@ $password2 = myPost('password2');
                         </div>
                         <div class="card-body">
                             <div class="form-group row">
-                                <label class="col-lg-3 col-md-4">Username</label>
-                                <div class="col-lg-9 col-md-8">
+                                <label class="col-lg-3  col-sm-4">Username</label>
+                                <div class="col-lg-9  col-sm-8">
                                     <span><?php echo $username ?></span>
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-lg-3 col-md-4">Email</label>
-                                <div class="col-lg-9 col-md-8">
+                                <label class="col-lg-3 col-sm-4">Email</label>
+                                <div class="col-lg-9 col-sm-8">
                                     <span><?php echo $email ?></span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-lg-3 col-sm-4">Password</label>
+                                <div class="col-lg-9 col-sm-8">
+                                    <span><?php echo $password ?></span>
                                 </div>
                             </div>
                         </div>

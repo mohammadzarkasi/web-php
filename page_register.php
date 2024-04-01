@@ -15,7 +15,8 @@
                             <form method="post" action="handle_register.php">
                                 <div class="form-group">
                                     <label for="inputUsername">Username</label>
-                                    <input type="text" class="form-control" id="username" name="username" placeholder="Masukkan username">
+                                    <input type="text" class="form-control" id="username" 
+                                        name="username" placeholder="Masukkan username">
                                 </div>
                                 <div class="form-group">
                                     <label for="inputEmail">Email</label>
